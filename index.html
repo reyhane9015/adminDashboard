@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>adminDashboard</title>
+</head>
+<body>
+    
+
+<!-- source: https://www.youtube.com/watch?v=gdA1G5h-D80&t=151s -->
+
+
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-apple" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">
+                          Apple
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                   <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Dashboard</span>
+                   </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Messages</span>
+                  </a>
+                </li>
+
+                <li>
+                   <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Help</span>
+                   </a>
+                </li>
+
+                <li>
+                   <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Setting</span>
+                   </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+
+                <li>
+                   <a href="#">
+                        <span class="icon">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Sign out</span>
+                   </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle" onclick="toggleMenu()"></div>
+                <div class="search">
+                    <label>
+                        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                        <input type="text" placeholder="Search here...">
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="profile.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="cardBox">
+                <div class="card">
+                   <div>
+                        <div class="numbers">1.434</div>
+                        <div class="cardName">Daily views</div>
+                   </div>
+                   <div class="iconBox">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                   </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">434</div>
+                        <div class="cardName">Sales</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">200</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-comment" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                         <div class="numbers">400$</div>
+                         <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="details">
+                <!-- <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>acf</td>
+                                <td>200$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status deliverd">
+                                        Delivered
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>baa</td>
+                                <td>100$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ght</td>
+                                <td>250$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status return">
+                                        Return
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>acfh</td>
+                                <td>780$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status inprogress">
+                                        In progress
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>acf</td>
+                                <td>200$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status deliverd">
+                                        Delivered
+                                     </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>baa</td>
+                                <td>100$</td>
+                                <td>Paid</td>
+                                <td>
+                                    <span class="status pending">
+                                        Pending
+                                     </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                    <table>
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="imgB">
+                                        <img src="profile.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Anna</h4>
+                                    <span>Italy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imgB">
+                                        <img src="profile.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Kati</h4>
+                                    <span>Italy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imgB">
+                                        <img src="profile.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>Sam</h4>
+                                    <span>Italy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imgB">
+                                        <img src="profile.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>John</h4>
+                                    <span>Italy</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="imgB">
+                                        <img src="profile.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>
+                                    <h4>David</h4>
+                                    <span>Italy</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
