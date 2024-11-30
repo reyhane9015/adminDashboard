@@ -5,296 +5,444 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <title>adminDashboard</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/line-awesome.min.css"> -->
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 <body>
-    
-
-<!-- source: https://www.youtube.com/watch?v=gdA1G5h-D80&t=151s -->
-
-
     <div class="container">
         <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-apple" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">
-                          Apple
-                        </span>
-                    </a>
-                </li>
 
-                <li>
-                   <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-home" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Dashboard</span>
-                   </a>
-                </li>
+            <div class="nav-logo">
+                <a href="#">
+                     <span>
+                        <i class="fa fa-apple" aria-hidden="true"></i>
+                     </span>
+                     <span>APPLE</span>
+                </a>
+            </div>
 
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Customers</span>
-                    </a>
-                </li>
 
-                <li>
-                  <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-comment" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Messages</span>
-                  </a>
-                </li>
+            <div class="nav-content">
 
-                <li>
-                   <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-question-circle" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Help</span>
-                   </a>
-                </li>
+                <div class="nav-row">
+                    <div class="row-btn">
+                         <a href="#">
+                             <span>
+                                 <i class="fa fa-home" aria-hidden="true"></i>
+                             </span>
+                             <span>Home</span>
+                         </a>
+                    </div>
+                </div>
 
-                <li>
-                   <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-cog" aria-hidden="true"></i>
+                <div class="nav-row">
+                   <div class="row-btn" onclick="openSubNav(event)">
+                        <a href="#">
+                            <span>
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                            </span>
+                            <span>Message</span>
+                        </a>
+                        <span>
+                            <i class="fa fa-caret-right" id="arrow" aria-hidden="true"></i>
                         </span>
-                        <span class="title">Setting</span>
-                   </a>
-                </li>
+                   </div>
+                   <div class="subnav-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    message 1
+                                </a>
+                            </li>
 
-                <li>
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Password</span>
-                    </a>
-                </li>
+                            <li>
+                                <a href="#">
+                                    message 2
+                                </a>
+                            </li>
 
-                <li>
-                   <a href="#">
-                        <span class="icon">
-                            <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        </span>
-                        <span class="title">Sign out</span>
-                   </a>
-                </li>
-            </ul>
+                            <li>
+                                <a href="#">
+                                    message 3
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    message 4
+                                </a>
+                            </li>
+                           
+                        </ul>
+                   </div>
+                </div>
+
+                <div class="nav-row">
+                    <div class="row-btn" onclick="openSubNav(event)">
+                         <a href="#">
+                             <span>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                             </span>
+                             <span>Customers</span>
+                         </a>
+                         <span>
+                             <i class="fa fa-caret-right" id="arrow" aria-hidden="true"></i>
+                         </span>
+                    </div>
+                    <div class="subnav-content">
+                         <ul>
+                             <li>
+                                 <a href="#">
+                                    Customers 1
+                                 </a>
+                             </li>
+ 
+                             <li>
+                                 <a href="#">
+                                    Customers 2
+                                 </a>
+                             </li>
+ 
+                             <li>
+                                 <a href="#">
+                                    Customers 3
+                                 </a>
+                             </li>
+                            
+                         </ul>
+                    </div>
+                 </div>
+
+                <div class="nav-row">
+                    <div class="row-btn">
+                         <a href="#">
+                             <span>
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                             </span>
+                             <span>Help</span>
+                         </a>
+                    </div>
+                </div>
+
+                <div class="nav-row">
+                    <div class="row-btn">
+                         <a href="#">
+                             <span>
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                             </span>
+                             <span>Sign Out</span>
+                         </a>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
         <div class="main">
             <div class="topbar">
-                <div class="toggle" onclick="toggleMenu()"></div>
+                <button class="toggle" onclick="toggleMenu(event)"></button>
+
                 <div class="search">
-                    <label>
-                        <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
-                        <input type="text" placeholder="Search here...">
-                    </label>
+                    <input type="text" placeholder="Search here..."> 
                 </div>
-                <div class="user">
-                    <img src="profile.jpg" alt="">
+
+                <button class="user" onclick="openProfileModal(event)">
+                    <img src="profile.jfif" alt="profile">
+                </button>
+                <div class="profileBackdrop" onclick="closeProfileModal(event)">
+                    <div class="profile-modal" id="myModal" onclick="event.stopPropagation()">
+                        <div class="profile-header">
+                            <span onclick="closeProfileModal(event)">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </span>
+                            <div class="image-id">
+                                <div class="img-container">
+                                    <img src="profile.jfif" alt="profile">
+                                </div>
+                                <h3>Reyhane</h3>
+                                <p>User ID: 856784</p>
+                                <p>Email: Sample@yahoo.com</p>
+                                <div class="all-btn">
+                                    <button type="button">Account</button>
+                                    <button type="button">Sign out</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-content">
+                            <div class="organization">
+                                <p>Organization</p>
+                                <a href="#">
+                                   <p>Manegment</p>
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="profile-info">
+                                    <p>NickName</p>
+                                    <p>ID: 76r446</p>
+                                    <p>Trail</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="cardBox">
-                <div class="card">
-                   <div>
-                        <div class="numbers">1.434</div>
-                        <div class="cardName">Daily views</div>
-                   </div>
-                   <div class="iconBox">
-                        <i class="fa fa-eye" aria-hidden="true"></i>
-                   </div>
+
+            <div class="word-content">
+                <h2>Words</h2>
+                <div class="cardbox">
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div>To Learn</div>
+                            <div>40%</div>
+                        </div>
+                        <div class="card-icon"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div>Knew</div>
+                            <div>50%</div>
+                        </div>
+                        <div class="card-icon"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content">
+                            <div>Learning</div>
+                            <div>10%</div>
+                        </div>
+                        <div class="card-icon"></div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div>
-                        <div class="numbers">434</div>
-                        <div class="cardName">Sales</div>
-                    </div>
-                    <div class="iconBox">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <div class="numbers">200</div>
-                        <div class="cardName">Comments</div>
-                    </div>
-                    <div class="iconBox">
-                        <i class="fa fa-comment" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                         <div class="numbers">400$</div>
-                         <div class="cardName">Earning</div>
-                    </div>
-                    <div class="iconBox">
-                        <i class="fa fa-usd" aria-hidden="true"></i>
-                    </div>
-                 </div>
             </div>
 
-            <div class="details">
-                <!-- <div class="recentOrders">
-                    <div class="cardHeader">
-                        <h2>Recent Orders</h2>
-                        <a href="#" class="btn">View All</a>
+            <div class="progress-content">
+                <h2>Progress</h2>
+
+                <div class="times-content">
+                    <div class="times-btns">
+                        <button class="btn-info btn-active" id="daily-btn" onclick="btnHandler(event),contentHandler(event)">Daily</button>
+                        <button class="btn-info" id="weekly-btn" onclick="btnHandler(event),contentHandler(event)">Weekly</button>
+                        <button class="btn-info" id="monthly-btn" onclick="btnHandler(event),contentHandler(event)">Monthly</button>
                     </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Name</td>
-                                <td>Price</td>
-                                <td>Payment</td>
-                                <td>Status</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>acf</td>
-                                <td>200$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status deliverd">
-                                        Delivered
-                                     </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>baa</td>
-                                <td>100$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status pending">
-                                        Pending
-                                     </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>ght</td>
-                                <td>250$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status return">
-                                        Return
-                                     </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>acfh</td>
-                                <td>780$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status inprogress">
-                                        In progress
-                                     </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>acf</td>
-                                <td>200$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status deliverd">
-                                        Delivered
-                                     </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>baa</td>
-                                <td>100$</td>
-                                <td>Paid</td>
-                                <td>
-                                    <span class="status pending">
-                                        Pending
-                                     </span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> -->
-                <div class="recentCustomers">
-                    <div class="cardHeader">
-                        <h2>Recent Customers</h2>
+                    <div class="times-grid">
+                        <div class="content" id="daily">
+                            <div class="btn-content">
+                                <div class="day-card">
+                                    Mon
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Tue
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Wed
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Thu
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Fri
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Sat
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Sun
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content" id="weekly">
+                            <div class="btn-content">
+                                <div class="day-card">
+                                    July 1
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    July 2
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Agu 1
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    Agu 2
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="content" id="monthly">
+                            <div class="btn-content">
+                                <div class="day-card">
+                                    2022
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    2021
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    2020
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="day-card">
+                                    2019
+                                    <br>
+                                    <input type="checkbox">
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <table>
-                        <thead></thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="imgB">
-                                        <img src="profile.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h4>Anna</h4>
-                                    <span>Italy</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="imgB">
-                                        <img src="profile.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h4>Kati</h4>
-                                    <span>Italy</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="imgB">
-                                        <img src="profile.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h4>Sam</h4>
-                                    <span>Italy</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="imgB">
-                                        <img src="profile.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h4>John</h4>
-                                    <span>Italy</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="imgB">
-                                        <img src="profile.jpg" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <h4>David</h4>
-                                    <span>Italy</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
+
+            <div class="recent-winners">
+                <h2>Recent Winners</h2>
+                    <div class="table-container">
+                        <div class="table-header">
+                            <div>Image</div>
+                            <div>Name</div>
+                            <div>Score</div>
+                            <div>Follow</div>
+                        </div>
+                        <div class="table-content">
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>300</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>200</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>100</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>90</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>50</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                            <div class="table-item">
+                                <div>
+                                    <div class="img-container">
+                                        <img src="profile.jfif" alt="profile">
+                                    </div>
+                                </div>
+                                <div>Mark Duo</div>
+                                <div>30</div>
+                                <div>
+                                    <button>Follow</button>
+                                </div>
+                            </div>
+                         
+                        </div>
+                        
+                    </div>
+            </div>
+
+            <div class="friends-content">
+                <h2>Friends</h2>
+                <div class="cardbox">
+
+                    <a href="#" class="card">
+                        Find Friends
+                        <span>
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    <a href="#" class="card">
+                       Share with Your Friends
+                       <span>
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </div>
     
-    <script src="main.js"></script>
+
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
